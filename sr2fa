@@ -1,0 +1,4 @@
+# convert .sr files to fasta file format
+from Bio import SeqIO
+count = SeqIO.convert("/Users/elkington/Downloads/Medium/makarova_cas_NRM2015.profiles/cd06127.sr", "swiss", "/Users/elkington/Downloads/Medium/makarova_cas_NRM2015.profiles/cd06127.fa", "fasta")
+print "Converted %i records" % count
